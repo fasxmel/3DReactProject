@@ -1,9 +1,8 @@
-import React from 'react'
 
-const Computers = () => {
+const ComputersCanvas = () => {
   return (
     <div>Computers</div>
   )
 }
-
-export default Computers
+ 
+export default ComputersCanvas;
