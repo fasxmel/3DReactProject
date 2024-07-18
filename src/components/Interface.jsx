@@ -25,9 +25,9 @@ import Contact from "./pages/Contact";
 const Interface = () => {
   return (
     <div className="flex flex-col items-center w-screen">
+    <About />
     <Navbar />
     <Hero/>
-    <About />
     <Skills />
     <Projects />
     <Contact />
