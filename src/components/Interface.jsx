@@ -1,13 +1,32 @@
+import { motion } from "framer-motion";
+
+
 // Creating Section Component 
 // for Interface whth children as props
 // and is cant be use multiple times
 export const Section = (props) => {
     const {children} = props;
     return (
-        <section className={`
+    <motion.section className={`
         w-full h-screen p-8 max-w-screen-2xl mx-auto
         flex flex-col items-start justify-center`
-    }>{children}</section>
+    }
+    initial={{
+        opacity: 0,
+        y: 50,
+    }}
+    whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 1,
+            delay: 0.6,
+        },
+    }}
+    
+    >
+    {children}
+    </motion.section>
     )
 }
 
