@@ -5,7 +5,7 @@ const Contact = () => {
         <h2 className="text-5xl font-bold">Contact me</h2>
         <div className=" mt-8 p-8 rounded-md bg-white w-96 max-w-full">
           <form>
-            <label for="name" className="font-medium text-gray-900 block mb-1">
+            <label htmlFor="name" className="font-medium text-gray-900 block mb-1">
               Name
             </label>
             <input
@@ -15,7 +15,7 @@ const Contact = () => {
               required
             />
 
-            <label for="email" className="font-medium text-gray-900 block mb-1">
+            <label htmlFor="email" className="font-medium text-gray-900 block mb-1">
               Email
             </label>
             <input
@@ -25,7 +25,7 @@ const Contact = () => {
               required
             />
 
-            <label for="message" className="font-medium text-gray-900 block mb-1">
+            <label htmlFor="message" className="font-medium text-gray-900 block mb-1">
               Message
             </label>
             <textarea

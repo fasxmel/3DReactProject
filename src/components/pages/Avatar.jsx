@@ -1,4 +1,3 @@
-import { OrbitControls } from '@react-three/drei';
 
 const Avatar = () => {
   return (
